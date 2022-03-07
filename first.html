@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Learn JavaScript</title>
+    <script>
+        window.onload = function() {
+            // Your Code Here
+            let data = document.querySelectorAll("a");
+            for (let i = 0; i < data.length; i++) {
+                if (data[i].classList.contains("open") && data[i].innerHTML === "Elzero") {
+                    data[i].click();
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <a class="open" href="https://google.com">Google</a>
+    <a class="open" href="https://elzero.org">Elzero</a>
+    <a class="not" href="https://facebook.com">Facebook</a>
+    <a class="linked" href="https://linkedin.com">Elzero</a>
+    <script src="main.js"></script>
+</body>
+
+</html>
